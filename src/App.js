@@ -1,15 +1,23 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import CoxbazarDetail from './Pages/CoxbazarDetail/CoxbazarDetail';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
+import SreeMangleDetail from './Pages/SreeMangleDetail/SreeMangleDetail';
+import SundorbonDetails from './Pages/SundorbonDetails/SundorbonDetails';
 
 function App() {
   return (
-    <div className='image'>
+    <div className='image pb-40'>
+      <div className=''>
       <Header></Header>
       <Routes>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/coxbazar' element={<CoxbazarDetail></CoxbazarDetail>}></Route>
+        <Route path='/sreemangledetail' element={<SreeMangleDetail></SreeMangleDetail>}></Route>
+        <Route path='/sundorbon' element={<SundorbonDetails></SundorbonDetails>}></Route>
       </Routes>
+      </div>
     </div>
   );
 }
