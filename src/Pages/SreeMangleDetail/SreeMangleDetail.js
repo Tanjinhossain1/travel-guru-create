@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SreeMangleDetail = () => {
+    const navigate= useNavigate();
     return (
         <div className='pb-[105px] '>
             <div className='grid grid-cols-2'>
@@ -28,12 +30,13 @@ const SreeMangleDetail = () => {
                              </div>
                          </div>
                          <div className='flex justify-center mt-2'>
-                             <input  className='border py-2 px-12 bg-orange-400' type="submit" value="Start Booking" />
+                             <input onClick={()=>navigate('/bookindone')} className='border py-2 px-12 bg-orange-400' type="submit" value="Start Booking" />
                          </div>
                        
                         </div>
                     </div>
                 </div>
+                <button onClick={()=>navigate('/home')} className='mx-auto rounded-full hover:text-black hover:bg-white border py-3 px-32 bg-pink-800 font-bold text-xl text-white'>Back</button>
             </div>
         </div>
     );

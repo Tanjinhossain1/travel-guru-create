@@ -20,9 +20,9 @@ const Home = () => {
                       {/* <h1 className='images w-100 pt-80'>Cox's  Bazar</h1>
                       <h1 className='mongol'>Sreemangal</h1>
                       <h1 className='sundorbon'>Sundarbans</h1> */}
-                      <img onClick={()=>navigate('/coxbazar')} className='h-[390px] mt-4 rounded-lg hover:shadow-2xl hover:h-[405px]' src={cox} alt="" />
-                      <img onClick={()=>navigate('/sreemangledetail')} className='h-[400px] rounded-lg m-4 hover:h-[410px] hover:shadow-2xl' src={martin} alt="" />
-                      <img onClick={()=>navigate('/sundorbon')} className='h-[400px] rounded-lg m-4 hover:shadow-2xl hover:h-[410px]' src={sundorbon} alt="" />
+                      <img onClick={()=>navigate('/coxbazar')} className='h-[390px] mt-4 rounded-lg hover:shadow-2xl hover:border-8  hover:border-yellow-500 hover:h-[405px]' src={cox} alt="" />
+                      <img onClick={()=>navigate('/sreemangledetail')} className=' hover:border-8 hover:border-yellow-500 h-[400px]  rounded-lg m-4 hover:h-[410px] hover:shadow-2xl' src={martin} alt="" />
+                      <img onClick={()=>navigate('/sundorbon')} className='h-[400px] rounded-lg m-4 hover:shadow-2xl  hover:border-8 hover:border-yellow-500 hover:h-[410px]' src={sundorbon} alt="" />
                     </div>
                 </div>
             </div>

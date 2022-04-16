@@ -16,7 +16,11 @@ const Header = () => {
                 <NavLink className={({isActive})=>isActive ?'text-orange-700 ml-12': 'ml-12'} to={'/News'}>News</NavLink>
                 <NavLink className={({isActive})=>isActive ?'text-orange-700 ml-12': 'ml-12'} to={'/destination'}>Destination</NavLink>
                 <NavLink className={({isActive})=>isActive ?'text-orange-700 ml-12': 'ml-12'} to={'/blog'}>Blog</NavLink>
+
                 <NavLink className={({isActive})=>isActive ?'text-orange-700 ml-12': 'ml-12'} to={'/contact'}>Contact</NavLink>
+
+                <NavLink className={({isActive})=>isActive ?'text-orange-700 ml-12': 'ml-12'} to={'/login'}>Login</NavLink>
+                <NavLink className={({isActive})=>isActive ?'text-orange-700 ml-12': 'ml-12'} to={'/signup'}>Sign UP</NavLink>
             </div>
         </div>
     );

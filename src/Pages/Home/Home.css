@@ -1,6 +1,5 @@
 .image {
-
     /* background: linear-gradient(black, white); */
-    background: url('https://i.ibb.co/kK7QKSH/Rectangle-1.png') repeat #cfcfe6;
-   
+    background-image: url('https://i.ibb.co/kK7QKSH/Rectangle-1.png');
+ 
 }
