@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
@@ -14,6 +14,8 @@ const Login = () => {
       if(user){
           navigate('/home')
       }
+      const [signInWithGoogle] = useSignInWithGoogle(auth);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -41,6 +43,7 @@ const Login = () => {
                             <p className='mx-4 text-white font-bold'>or</p>
                             <hr className='w-[200px]' />
                         </div>
+                        <button onClick={()=>signInWithGoogle()} className='text-white border p-2'> <img className='rounded-full inline' width={60} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU93LhrAAjJTQEX6Ku6VBhDHHrbJUnFMjvwXoMKIPZp6UIsfRKWuYoM-jv4gQFIcbV-FQ&usqp=CAU" alt="" /> Google Sign In</button>
                     </div>
                 </div>
             </div>
